@@ -1,11 +1,12 @@
 import React from 'react';
-import { getUserName, getUserAge } from './helpers';
+
 function Home(props) {
     return (
-        <div>
-            new home page
-            {getUserName()}
-            {getUserAge()}
+        <div className="home-parent">
+            this is parent
+            <div className="home-child">
+                this is home page default
+            </div>
         </div>
     );
 }

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Home from '../components/homePage/Home';
-import Login from '../components/Login';
+import Login from '../components/login/Login';
+import '../scss/index.scss';
+
 
 export default function MainApp({ initialPage }) {
     const [currentPage, setCurrentPage] = useState(initialPage);
