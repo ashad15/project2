@@ -5,7 +5,7 @@ function Home(props) {
         <div className="home-parent">
             this is parent
             <div className="home-child">
-                this is home page default
+                this is home page default asdf
             </div>
         </div>
     );
