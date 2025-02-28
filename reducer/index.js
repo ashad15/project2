@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import appReducer from "./AppReducer"; // Example reducer
+import initReducer from "./InitReducer"; // Example reducer
 
 export const store = configureStore({
   reducer: {
-    app: appReducer, // Add more reducers here
+    init: initReducer, // Add more reducers here
   },
 });

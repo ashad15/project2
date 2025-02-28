@@ -1,11 +1,11 @@
 import React from 'react';
 
-function kill() {
+function DashboardPage(props) {
     return (
         <div>
-            <h1>Kill</h1>
+            asdhe
         </div>
     );
 }
 
-export default kill;
+export default DashboardPage;
