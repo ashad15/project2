@@ -1,9 +1,11 @@
 import React from 'react';
-
+import LoginLeftSection from './LoginLeftSection';
+import LoginDetails from './loginDetails/LoginDetails';
 function LoginInfo(props) {
     return (
-        <div>
-            login info
+        <div className="login-wrapper-container">
+            <LoginLeftSection />
+            <LoginDetails />
         </div>
     );
 }
