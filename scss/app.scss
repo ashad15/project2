@@ -5,3 +5,135 @@
         color: blue;
     }
 }
+
+// .gradient-left {
+//     background: linear-gradient(to right, #6B46C1, #3182CE);
+//     font-size: large;
+// }
+
+// .login-wrapper-container {
+
+// }
+.split-screen {
+    display: flex;
+    height: 100vh;
+  
+    .left-side {
+        width: 50%;
+        background: linear-gradient(to right, #6b46c1, #3182ce);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+  
+        img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+  
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+  
+        p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+    }
+  
+    .right-side {
+        width: 50%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+  
+        h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            color: gray;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 350px;
+            margin-top: 20px;
+
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: border 0.3s ease-in-out;
+
+            &:hover {
+                border-color: #6b46c1;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .text {
+            h3 {
+                font-weight: bold;
+            }
+
+            p {
+                color: gray;
+                font-size: 0.9rem;
+            }
+            }
+        }
+
+        .next-btn {
+            background: #6b46c1;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+
+            &:hover {
+            background: #553c9a;
+            }
+        }
+
+        .login-text {
+            text-align: center;
+            margin-top: 15px;
+            color: gray;
+
+            a {
+                color: #6b46c1;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        }
+    }
+}
