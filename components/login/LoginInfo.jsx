@@ -4,9 +4,9 @@ import LoginDetails from './loginDetails/LoginDetails';
 function LoginInfo(props) {
     return (
         // <div className="login-wrapper-container">
-        <div className='split-screen'>
+        <div className='login-container'>
             <LoginLeftSection />
-            {/* <LoginDetails /> */}
+            <LoginDetails />
         </div>
     );
 }

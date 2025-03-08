@@ -1,37 +1,19 @@
 import React from 'react';
-
+import imgLoginLeft from '../assets/LoginLeftImg.svg';
+import Image from 'next/image';
+import { LEFT_SECTION_INFO_CONTAINER_TEXT } from './constants';
 function LoginLeftSection(props) {
+    const BrandName = 'BNE_DESIGN';
+
     return (
-        // <div className="h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 to-blue-500">
-        // <div className = "gradient-left">
-        // <div className="h-screen flex items-center justify-center" style={{ background: 'radial-gradient(circle, #6B46C1, #3182CE)' }}>
-        //     <h1 className="text-white text-3xl font-bold">Gradient Background</h1>
-        // </div>
-
-
-
-
-
-        <div className='left-side'>
-            <img 
-            src="/your-image.png" 
-            alt="idk" 
-            className='img'
-            />
-            <h1 className='h1'>Online community for Front-end Developers</h1>
-            <p className='p'>idk some shit here</p>
+        <div className="login-left-section">
+            <div className="login-left-section-info-container ">
+                <span className="font-normal text-[32px]">{BrandName}</span>
+                <Image  className='img-login-left' src={imgLoginLeft} alt="BNE" />
+                <h1 className="text-[36px] font-normal">{LEFT_SECTION_INFO_CONTAINER_TEXT.heading}</h1>
+                <p className="text-[18px] font-medium">{LEFT_SECTION_INFO_CONTAINER_TEXT.subHeading}</p>
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
         // <div className="h-screen flex">
         //     {/* Left Side - Gradient Background with Image */}
