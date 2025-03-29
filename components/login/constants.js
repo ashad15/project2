@@ -38,3 +38,16 @@ export const LOGIN_CONST_TEXT = {
       SIGNUP: "Signup",
     },
   };
+
+export const SIGN_UP_STEP_1_CARDS = [
+  {
+    title: "Become a Mentor",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.",
+    image: '../assets/SignUpCardImage.svg',
+  },
+  {
+    title: "Browse a Mentor",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.",
+    image: '../assets/SignUpCardImage.svg',
+  }
+];
