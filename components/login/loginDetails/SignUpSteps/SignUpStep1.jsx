@@ -20,7 +20,7 @@ const SignUpStep1 = ({ onNext, onSwitchToLogin }) => {
                     key={index}
                     title={card.title}
                     description={card.description}
-                    image={card.image}
+                    imagesrc={card.image}
                     selected={selectedCard === index}
                     onClick={() => setSelectedCard(index)}
                 />
