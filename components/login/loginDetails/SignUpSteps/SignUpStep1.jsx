@@ -1,6 +1,7 @@
 import { LOGIN_CONST_TEXT, SIGN_UP_STEP_1_CARDS } from '../../constants';
 import Card from '../../Cards';
 import { useState } from 'react';
+import signUpImage from '../../../assets/SignUpCardImage.svg'
 
 const SignUpStep1 = ({ onNext, onSwitchToLogin }) => {
     const [selectedCard, setSelectedCard] = useState(null);
@@ -20,7 +21,7 @@ const SignUpStep1 = ({ onNext, onSwitchToLogin }) => {
                     key={index}
                     title={card.title}
                     description={card.description}
-                    imagesrc={card.image}
+                    imagesrc={signUpImage}
                     selected={selectedCard === index}
                     onClick={() => setSelectedCard(index)}
                 />
