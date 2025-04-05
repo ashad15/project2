@@ -16,16 +16,18 @@ const SignUpStep1 = ({ onNext, onSwitchToLogin }) => {
             <button className={'signupButton'} onClick={onNext}>
                 {LOGIN_CONST_TEXT.SIGN_UP.BROWSE_MENTOR}
             </button> */}
-            {SIGN_UP_STEP_1_CARDS.map((card, index) => (
-                <Card
-                    key={index}
-                    title={card.title}
-                    description={card.description}
-                    imagesrc={signUpImage}
-                    selected={selectedCard === index}
-                    onClick={() => setSelectedCard(index)}
-                />
-            ))}
+            <div className='mt-14 mb-5'>
+                {SIGN_UP_STEP_1_CARDS.map((card, index) => (
+                    <Card
+                        key={index}
+                        title={card.title}
+                        description={card.description}
+                        imagesrc={signUpImage}
+                        selected={selectedCard === index}
+                        onClick={() => setSelectedCard(index)}
+                    />
+                ))}
+            </div>
             <button 
                 className='signupButton' 
                 onClick={onNext} 
