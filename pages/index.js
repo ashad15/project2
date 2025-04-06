@@ -13,6 +13,4 @@ export default function MainApp({}) {
             router.push('/login'); // {{ edit_3 }}
         }
     }, [JSON.stringify(loginInfo)]);
-
-    return <div>asjad</div>;
 }
