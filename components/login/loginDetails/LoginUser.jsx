@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import { LOGIN_CONST_TEXT } from '../constants';
 import { getPasswordStrength } from '../helper';
+import { Eye, EyeOff } from 'lucide-react';
 
 const LoginUser = ({ onLoginSuccess }) => {
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -27,7 +29,9 @@ const LoginUser = ({ onLoginSuccess }) => {
     <div className={'login-page-container'}>
       <h2>{LOGIN_CONST_TEXT.LOGIN.TITLE}</h2>
       <p>{LOGIN_CONST_TEXT.LOGIN.SUB_TITLE}</p>
+
       <form onSubmit={handleSubmit}>
+
         <label htmlFor="email" className='loginLabel'>{LOGIN_CONST_TEXT.LOGIN.EMAIL}</label>
         <input
           type="email"
@@ -37,26 +41,27 @@ const LoginUser = ({ onLoginSuccess }) => {
           onChange={(e) => setEmail(e.target.value)}
           className={'loginInput'}
         />
+
         <label htmlFor="password" className='loginLabel'>{LOGIN_CONST_TEXT.LOGIN.PASSWORD}</label>
-        <input
-          type={showPassword ? 'text' : 'password'}
-          id='password'
-          placeholder={LOGIN_CONST_TEXT.LOGIN.PASSWORD_PLACEHOLDER}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className={'loginInput'}
-        />
-        <button
-          type='button'
-          className='showPassword'
-          onClick={() => setShowPassword(!showPassword)}
-        >
-          {showPassword ? 'Hide Password' : 'Show Password'}
-          {/* {showPassword ? LOGIN_CONST_TEXT.LOGIN.HIDE_PASSWORD : LOGIN_CONST_TEXT.LOGIN.SHOW_PASSWORD}
-          <span onClick={() => setShowPassword(!showPassword)} className='eyeIcon'>
-            {showPassword ? '👁️' : '👁️‍🗨️'}
-          </span> */}
-        </button>
+        <div className='passwordWrapper'>
+          <input
+            type={showPassword ? 'text' : 'password'}
+            id='password'
+            placeholder={LOGIN_CONST_TEXT.LOGIN.PASSWORD_PLACEHOLDER}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className={'loginInput pr-10'}
+          />
+          <button
+            type='button'
+            className='showPassword'
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+          </button>
+        </div>
+
+
         <div className='progressBar'>
           <div
             className={`progress-fill ${strength.color}`}

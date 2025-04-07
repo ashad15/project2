@@ -244,6 +244,7 @@
                 &:focus {
                     border-color: #0056b3;
                     outline: none;
+                    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
                 }
             }
 
@@ -253,6 +254,34 @@
                 color: #333;
                 margin-bottom: 5px;
                 display: block;
+            }
+
+            .passwordWrapper {
+                position: relative;
+                display: flex;
+                align-items: center;
+                
+                .showPassword {
+                    position: absolute;
+                    right: 0.75rem;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #6b7280;
+                    height: 100%;
+                
+                    &:hover {
+                    color: #374151;
+                    }
+
+                    svg {
+                        pointer-events: none; // Prevents the icon from capturing mouse events
+                    }
+                }
             }
 
             .progressBar {
