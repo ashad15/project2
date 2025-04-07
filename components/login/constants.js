@@ -29,7 +29,10 @@ export const LOGIN_CONST_TEXT = {
     },
     LOGIN: {
       TITLE: "Login",
+      SUB_TITLE: "Get Learned by the best mentors and became one.",
+      EMAIL: "Email",
       EMAIL_PLACEHOLDER: "Enter your email id",
+      PASSWORD: "Create a strong password",
       PASSWORD_PLACEHOLDER: "Password",
       REMEMBER_ME: "Remember me",
       FORGOT_PASSWORD: "Forgot password?",
@@ -38,3 +41,14 @@ export const LOGIN_CONST_TEXT = {
       SIGNUP: "Signup",
     },
   };
+
+export const SIGN_UP_STEP_1_CARDS = [
+  {
+    title: "Become a Mentor",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.",
+  },
+  {
+    title: "Browse a Mentor",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.",
+  }
+];
